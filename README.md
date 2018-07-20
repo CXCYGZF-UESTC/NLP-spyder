@@ -46,7 +46,7 @@ Zhiqi Liu
 * **Description：**<br/> 
 This is a spyder program for mobike location, you can get the location of mobikes of a certain area.
 * **Dependencies：**<br/> 
-Windows/Linux
+Windows/Linux<br/> 
 Python2
 * **Operation：**<br/> 
 For more detailed operations, please open the readme in the folder mobike.
