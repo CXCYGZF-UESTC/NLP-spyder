@@ -34,7 +34,7 @@ from pyspider.libs.base_handler import *
 
 # Output Format
 * You'll find a collection named [date]Guba under a database called [stockcode]eastmoney.
-* And you will have documents like:
+* And you will have **documents** like:
 ```
 {
 '_id': ObjectId('5b51f174c1fb25567d5eba1e'), 
@@ -51,8 +51,7 @@ from pyspider.libs.base_handler import *
 }
 ```
 
-# Other Things
-About how to write this program, the main process is :
-1. Use *Fiddler* to capture the packets of mobike app
-2. Get the url and data form from the captured packets
-3. Use *Postman* to simulate the spyder program and debug
+# Something important:
+1. This project is a very good chance to be familiar with the framework--*pyspider* and the operations of using the *mongoDB*.
+2. The two frameworks of spider(pyspider & scrapy) have their own advantages and disadvantages. I recommend to start with pyspider and learn about scrapy later, because pyspyider is more visible for developers.
+3. **Last but not least, the spider is just a tool, we need to get the data in the shortest time and with the least effort.**
