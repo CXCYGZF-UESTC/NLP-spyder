@@ -1,5 +1,6 @@
 # Description
-This is a project to crawl the stock review website. In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
+This is a project to crawl the stock review website. 
+In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
 
 
 # Dependencies
