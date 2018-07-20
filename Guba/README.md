@@ -1,11 +1,12 @@
 # Description
 * This is a project to crawl the stock review website. 
-* In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
+* In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present.
+* I use the framework: pyspider and database operations: mongoDB.
 
 
 # Dependencies
-+ [pyspider(framework)](http://docs.pyspider.org/en/latest/)
-+ mongoDB/redis(database)
++ [pyspider](http://docs.pyspider.org/en/latest/)(framework)
++ [mongoDB](https://www.mongodb.com/)/[redis](https://redis.io/)(database)
 + lxml/datatime/re
 
 ```
@@ -18,7 +19,7 @@ from pyspider.libs.base_handler import *
 
 # Operation
 
-+ Download [pyspider(framework)](http://docs.pyspider.org/en/latest/)，[mongoDB](https://www.mongodb.com/)，[redis](https://redis.io/) and other dependencies.
++ Download [pyspider](http://docs.pyspider.org/en/latest/)(framework), [mongoDB](https://www.mongodb.com/), [redis](https://redis.io/) and other dependencies.
 + run `set_stockCodes/setCodes.py`（in order to get all symbols of HS300 and load them into mongoDB）
 + put `set_database/resultdb.py` into database/mongodb directory of pyspider（in order to save the crawling data to mongoDB）
 + start **redis**
@@ -54,4 +55,5 @@ from pyspider.libs.base_handler import *
 # Something important:
 1. This project is a very good chance to be familiar with the framework--*pyspider* and the operations of using the *mongoDB*.
 2. The two frameworks of spider(pyspider & scrapy) have their own advantages and disadvantages. I recommend to start with pyspider and learn about scrapy later, because pyspyider is more visible for developers.
-3. **Last but not least, the spider is just a tool, we need to get the data in the shortest time and with the least effort.**
+3. In the file catalogue`reference/`, I uploaded a book named `MongoDB权威指南` which perfectly introduce the **mongoDB** to the reader.
+4. **Last but not least, the spider is just a tool, we need to get the data in the shortest time and with the least effort.**
