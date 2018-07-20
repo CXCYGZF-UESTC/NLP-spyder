@@ -1,6 +1,6 @@
 # Description
-This is a project to crawl the stock review website. 
-In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
+* This is a project to crawl the stock review website. 
+* In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
 
 
 # Dependencies
@@ -33,30 +33,26 @@ from pyspider.libs.base_handler import *
 
 
 # Output Format
-You'll find a collection named [date]GuYouHui under a database called [stockcode]eastmoney.
-
+* You'll find a collection named [date]Guba under a database called [stockcode]eastmoney.
+* And you will have documents like:
+'''
+{
+'_id': ObjectId('5b51f174c1fb25567d5eba1e'), 
+'taskid': 'da01f5291f17de702d1bd7ec02d00757', 
+'author': '股友5Soa6g', 
+'comment': '0', 
+'create': '2017-03-20 11:49:56', 
+'created_at': 618916962, 
+'last': '03-20 11:49', 
+'read': '1240', 
+'text': 'A股糸统行情都轰轰烈烈慢悠悠像是名路神仙消受不起，水土不服。', 
+'title': 'A股糸统行情都轰轰烈烈慢悠悠像是名路神仙消受', 
+'url': 'http://guba.eastmoney.com/list,000001,f_344.html'
+}
+'''
 
 # Other Things
 About how to write this program, the main process is :
 1. Use *Fiddler* to capture the packets of mobike app
 2. Get the url and data form from the captured packets
 3. Use *Postman* to simulate the spyder program and debug
-
-# PS
-Screenshots of each step:
-
-[fiddler]: screenshots/fiddler.png
-[Postman]: screenshots/postman.png
-[result]: screenshots/result.png
-[visualization]: screenshots/visualization.png
-Fiddler:
-![fiddler]
-
-Postman:
-![postman]
-
-result:
-![result]
-
-visualization(using online web visualization software [BDP](https://www.bdp.cn/home.html)):
-![visualization]
