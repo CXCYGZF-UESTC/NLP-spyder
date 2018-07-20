@@ -35,7 +35,7 @@ from pyspider.libs.base_handler import *
 # Output Format
 * You'll find a collection named [date]Guba under a database called [stockcode]eastmoney.
 * And you will have documents like:
-'''
+```
 {
 '_id': ObjectId('5b51f174c1fb25567d5eba1e'), 
 'taskid': 'da01f5291f17de702d1bd7ec02d00757', 
@@ -49,7 +49,7 @@ from pyspider.libs.base_handler import *
 'title': 'A股糸统行情都轰轰烈烈慢悠悠像是名路神仙消受', 
 'url': 'http://guba.eastmoney.com/list,000001,f_344.html'
 }
-'''
+```
 
 # Other Things
 About how to write this program, the main process is :
