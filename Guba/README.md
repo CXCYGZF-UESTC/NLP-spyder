@@ -1,38 +1,39 @@
 # Description
-This is a spyder program for mobike location, you can get the location of mobikes of a certain area.
-+ Use *GaoDe Coordinate System*
-+ Location is stord in /mobike_loc-[date]-[time].csv
+This is a project to crawl the stock review website. In the project, I climbed all the comments on the 300 stocks in the HS300 index from January 1, 2015 to the present. In this project I use the framework: pyspider and database operations: mongoDB.
+
 
 # Dependencies
-+ Windows/Linux
-+ Python2
++ [pyspider(framework)](http://docs.pyspider.org/en/latest/)
++ mongoDB/redis(database)
++ lxml/datatime/re
+
 ```
-import requests
-import urllib3
-import time
-import csv
+import re
+import datetime
+from pymongo import *
+from lxml import etree
+from pyspider.libs.base_handler import *
 ```
 
 # Operation
-+ Download the document and unzip tit
-+ Run *requirements.txt*
-+ Change the variable *location* in *mobike_spyder.py* with [GaoDe Coordinate System](https://lbs.amap.com/console/show/picker), it can be one or more than one point
-```
-location = [('120.262277', '31.488689'), ('120.268457', '31.488689')]
-```
-+ Run *mobike_spyder.py*
 
-```
-pip install -r requirements.txt
-python mobike_spyder.py
-```
++ Download [pyspider(framework)](http://docs.pyspider.org/en/latest/)，[mongoDB](https://www.mongodb.com/)，[redis](https://redis.io/) and other dependencies.
++ run `set_stockCodes/setCodes.py`（in order to get all symbols of HS300 and load them into mongoDB）
++ put `set_database/resultdb.py` into database/mongodb directory of pyspider（in order to save the crawling data to mongoDB）
++ start **redis**
++ command line run `pyspider -c config.json all &` under directory of `config.json`
++ copy script in script folder, paste code to your own project in localhost:5000, save
++ click run button in localhost:5000
++ Complete two last steps before the market is open, then you'll get sentiment data everyday periodically.
+
+
+
+
+
 
 # Output Format
-+ csv
+You'll find a collection named [date]GuYouHui under a database called [stockcode]eastmoney.
 
-bikeid | biketype | time | longitude | latitude
------- | ------ | ------ | ------ | ------
-000001 | 0 | 2018/7/01  10:00:00 | 120.26569092 | 31.48410353
 
 # Other Things
 About how to write this program, the main process is :
