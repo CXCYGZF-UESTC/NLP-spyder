@@ -14,7 +14,7 @@ This is a project to crawl the stock review website. In the project, I climbed a
 * **Dependencies：**<br/> 
 pyspider / mongoDB / redis / lxml / datatime / re
 * **Operation：**<br/> 
-For more detailed operations, please open the readme in the folder mobike.
+For more detailed operations, please open the readme in the folder `Guba`.
 
 ### Sina Weibo（新浪微博）：
 * **URL：**<br/> 
@@ -43,15 +43,11 @@ http://news.sina.com.cn/
 * **Developer：**<br/> 
 Yexi Huang
 * **Description：**<br/> 
-This is a simple single threaded Python crawler, using BeautifulSoup to make simple links and news text crawling to Sina News homepage and store it in MySQL. To slightly improve the performance, the crawler crawls only the news text with more than five characters. It is important to note that this crawler does not exclude the picture description text, and the Sina picture news column http://slide.news.sina.com.cn/ uses GBK coding rather than UTF-8 encoding. The notes are Chinese and easy to understand.
+This is a simple threaded Python crawler, using BeautifulSoup to make links and news text crawling to Sina News homepage and store it in MySQL. To slightly improve the performance, the crawler crawls only the news text with more than five characters.
 * **Dependencies：**<br/> 
 Python 3.6 / MySQL 8.0 / bs4 / requests / pymysql / os
 * **Operation：**<br/> 
-Download MySQL, install it and sign in your account.<br/> 
-I recomand using MySQL 8.0 Command Line Client - Unicode to create your database and table.<br/> 
-Download sina_links.py and add it into your editor.<br/> 
-Install BeautifulSoup, requests and pymysql through pip(you can search for how to do it)<br/> 
-Replace some personal settings and run!<br/> 
+For more detailed operations, please open the readme in the folder `News_Sina`.
 
 ### Mobike（摩拜单车）：
 * **Developer：**<br/> 
@@ -62,4 +58,4 @@ This is a spyder program for mobike location, you can get the location of mobike
 Windows/Linux<br/> 
 Python2
 * **Operation：**<br/> 
-For more detailed operations, please open the readme in the folder mobike.
+For more detailed operations, please open the readme in the folder `mobike`.
