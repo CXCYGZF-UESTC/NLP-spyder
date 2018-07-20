@@ -14,6 +14,7 @@ This is a project to crawl the stock review website. In the project, I climbed a
 * **Dependencies：**<br/> 
 pyspider / mongoDB / redis / lxml / datatime / re
 * **Operation：**<br/> 
+For more detailed operations, please open the readme in the folder mobike.
 
 ### Sina Weibo（新浪微博）：
 * **URL：**<br/> 
@@ -24,7 +25,6 @@ Zhiqi Liu
 This code was designed for 'sina weibo', which is used to grap the content of certain weibo's comment. The only thing you have to do is to decide the range of each user's uid. This code can search user's uid in certain range. But remember that the address shouldn't have Chinese strings.
 * **Dependencies：**<br/> 
 python3.6
-* **Operation：**<br/> 
 
 ### Bilibili（哔哩哔哩动画）：
 * **URL：** <br/> 
@@ -35,9 +35,7 @@ Wei Sun
 This is a code that can automatically perform corresponding operations on the Bilibili station. The operations that can be performed are following, sending the bullet screen, making comments and saving to favorites.
 * **Dependencies：**<br/> 
 urllib / requests / ssl / re / time
-* **Operation：**<br/> 
-Input parameters: av_num （为所需要操作的视频的AV号）; <br/> 
-send user settings: headers, headers1, csrf （通过更改cookie可以修改发送请求的用户）
+
 
 ### News_Sina（新浪新闻）：
 * **URL：**<br/> 
