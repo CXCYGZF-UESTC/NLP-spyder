@@ -55,5 +55,5 @@ from pyspider.libs.base_handler import *
 # Something important:
 1. This project is a very good chance to be familiar with the framework--*pyspider* and the operations of using the *mongoDB*.
 2. The two frameworks of spider(pyspider & scrapy) have their own advantages and disadvantages. I recommend to start with pyspider and learn about scrapy later, because pyspyider is more visible for developers.
-3. In the file catalogue`reference/`, I uploaded a book named `MongoDB权威指南` which perfectly introduce the **mongoDB** to the reader.
+3.333
 4. **Last but not least, the spider is just a tool, we need to get the data in the shortest time and with the least effort.**
