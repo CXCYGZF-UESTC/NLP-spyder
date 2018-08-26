@@ -48,7 +48,6 @@ Screenshots of each step:
 [result]: screenshots/result.png
 [visualization]: screenshots/visualization.png
 Fiddler:
-![fiddler]
 
 Postman:
 ![postman]
