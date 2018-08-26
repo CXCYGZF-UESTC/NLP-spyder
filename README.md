@@ -48,8 +48,7 @@ This is a simple threaded Python crawler, using BeautifulSoup to make links and 
 Python 3.6 / MySQL 8.0 / bs4 / requests / pymysql / os
 * **Operation：**<br/> 
 For more detailed operations, please open the readme in the folder `News_Sina`.
-
-### Mobike（摩拜单车）：
+* **dskj dajkl f
 * **Developer：**<br/> 
 Yuzan Liu
 * **Description：**<br/> 
